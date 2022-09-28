@@ -1,8 +1,8 @@
-## Описание:
+#### Описание:
 Проект предназначен для работы с API социальной сети Yatube. 
 Регистрация, создание, редактирование и удаление постов, группы, подписки и комментарии.
 
-## Как запустить проект:
+### Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
 ```
@@ -52,7 +52,7 @@ python3 manage.py runserver
 
 ## Примеры запросов к API:
 
-*http://127.0.0.1:8000/api/v1/posts/*
+ *http://127.0.0.1:8000/api/v1/posts/*
 
  **POST:**
 
@@ -74,8 +74,9 @@ python3 manage.py runserver
   "image": "string",
   "group": 0
 }`
-
-*http://127.0.0.1:8000/api/v1/posts/{id}/*
+\
+\
+ *http://127.0.0.1:8000/api/v1/posts/{id}/*
 
 **PUT:**
  - Request samples
@@ -96,7 +97,8 @@ python3 manage.py runserver
   "image": "string",
   "group": 0
 }`
-
+\
+\
 *http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/*
 
 **GET:**
@@ -111,8 +113,9 @@ python3 manage.py runserver
     "post": 0
   }
 ]`
-
-*http://127.0.0.1:8000/api/v1/follow/*
+\
+\
+ *http://127.0.0.1:8000/api/v1/follow/*
 
 **POST:**
  - Request samples
