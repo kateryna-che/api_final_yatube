@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404
-from posts.models import Follow, Group, Post, User
 from rest_framework import filters, pagination, permissions, viewsets
 
+from posts.models import Follow, Group, Post, User
 from .permissions import IsAuthorOrReadOnly
 from .serializers import (CommentSerializer, FollowSerializer, GroupSerializer,
                           PostSerializer)
@@ -45,5 +45,3 @@ class FollowViewSet(viewsets.ModelViewSet):
         user = get_object_or_404(User, username=self.request.user)
         queryset = Follow.objects.filter(user=user)
         return queryset
-
-
